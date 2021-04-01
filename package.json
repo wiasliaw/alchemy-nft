@@ -1,0 +1,52 @@
+{
+  "name": "hardhat-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "compile": "hardhat compile",
+    "types-gen": "hardhat typechain",
+    "test": "hardhat test",
+    "clean": "rm -rf _caches/ _artifacts/ _types/",
+    "lint": "solhint 'contracts/**/*.sol' && eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiasliaw/hardhat-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "wiasliaw <leewei48750@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wiasliaw/hardhat-boilerplate/issues"
+  },
+  "homepage": "https://github.com/wiasliaw/hardhat-boilerplate#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.34",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "chai": "^4.3.4",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.0.32",
+    "hardhat": "^2.1.1",
+    "hardhat-gas-reporter": "^1.0.4",
+    "hardhat-typechain": "^0.3.5",
+    "prettier": "^2.2.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.6",
+    "solhint": "^3.3.4",
+    "solidity-coverage": "^0.7.16",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^9.1.1",
+    "typechain": "^4.0.3",
+    "typescript": "^4.2.3"
+  }
+}
