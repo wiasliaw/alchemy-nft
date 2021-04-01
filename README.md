@@ -1,32 +1,7 @@
-# hardhat-boilerplate
+# Alchemy NFT
 
-This is a boilerplate for solidity development.
+This repository is followed [alchemy hello-world tutorial](https://medium.com/alchemy-api/hello-world-smart-contract-for-beginners-7a65cc4ae95f)
 
-## Feature
+## Hello World
 
-- [X] linting & formatting
-- [ ] testing
-- [ ] coverage
-
-## hardhat plugins
-
-- hardhat-ethers
-- hardhat-waffle
-- hardhat-etherscan
-- hardhat-typechain
-- hardhat-gas-reporter
-
-## linting & formatting
-
-- typescript
-  - linter: typescript-eslint
-  - format: prettier
-- solidity
-  - linter: solhint
-  - format: preitter
-
-## testing
-
-- solidity
-  - library: ethersjs & waffle
-  - type support: typechain
+- [0x8752513e834E2ee8742d754E3ff3B0D406a6677f](https://ropsten.etherscan.io/address/0x8752513e834E2ee8742d754E3ff3B0D406a6677f)

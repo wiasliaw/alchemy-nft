@@ -8,7 +8,8 @@
     "test": "hardhat test",
     "clean": "rm -rf _caches/ _artifacts/ _types/",
     "lint": "solhint 'contracts/**/*.sol' && eslint . --ext .ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "deploy": "hardhat run scripts/deploy.ts --network ropsten"
   },
   "repository": {
     "type": "git",

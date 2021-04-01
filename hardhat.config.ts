@@ -1,10 +1,15 @@
 import path from 'path';
+import dotenv from 'dotenv';
 import { HardhatUserConfig } from 'hardhat/config';
 
+dotenv.config();
 import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-waffle';
 import 'hardhat-gas-reporter';
 import 'hardhat-typechain';
+
+const MNEMONIC = process.env.MNEMONIC;
+const ALCHEMY_URL = process.env.ALCHEMY_URL;
 
 const config: HardhatUserConfig = {
   // default network
@@ -12,6 +17,17 @@ const config: HardhatUserConfig = {
 
   // network config
   networks: {
+    ropsten: {
+      url: ALCHEMY_URL,
+      hardfork: 'istanbul',
+      blockGasLimit: 12450000,
+      gasMultiplier: 8000000000,
+      chainId: 3,
+      accounts: {
+        mnemonic: MNEMONIC,
+        path: "m/44'/60'/0'/0"
+      }
+    },
     hardhat: {
       hardfork: 'istanbul',
       blockGasLimit: 12450000,
